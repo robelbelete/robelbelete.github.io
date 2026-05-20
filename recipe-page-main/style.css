@@ -1,0 +1,170 @@
+@font-face{
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-family: outfit;}
+@font-face{
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-family: young;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+ --White:hsl(0, 0%, 100%);
+ --Stone-100: hsl(30, 54%, 90%);
+ --Stone-150: hsl(30, 18%, 87%);
+ --Stone-600: hsl(30, 10%, 34%);
+ --Stone-900: hsl(24, 5%, 18%);
+ --Brown-800: hsl(14, 45%, 36%);
+ --Rose-800: hsl(332, 51%, 32%);
+ --Rose-50: hsl(330, 100%, 98%);
+}
+body{
+    background-color: var(--Stone-100);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    width: 700px;
+    border-radius: 20px;
+}
+img{
+    display: flex;
+    border: solid 1px rgb(149, 149, 15);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.intro{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.intro h1{
+    font-family: young;
+    font-weight: 400;
+    color: var(--Stone-900);
+    margin-bottom: 20px;
+}
+.intro p{
+    color: var(--Stone-600);
+    font-family: outfit;
+    font-weight: 400;
+}
+.preparation-time{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Rose-50);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.preparation-time h3{
+    font-family: outfit;
+    font-weight: 600;
+    color: var(--Rose-800);
+}
+.preparation-time ul{
+    margin-left: 10px;
+}
+.preparation-time li{
+    margin: 10px;
+    font-family: outfit;
+    font-weight: 400;
+    color: var(--Stone-600);
+}
+.ingredients{
+    border-bottom: 1px solid var(--Stone-150);
+}
+.ingredients h2{
+    font-family: young;
+    color: var(--Brown-800);
+    font-weight:400;
+    margin-bottom: 20px;
+}
+.ingredients ul{
+    margin-left: 10px;
+}
+.ingredients li{
+    margin: 10px;
+    font-family: outfit;
+    font-weight:400;
+    color: var(--Stone-600);
+}
+#last{
+    margin-bottom: 20px;
+    color: var(--Stone-600);
+}
+.instructions h2{
+    font-family: young;
+    color: var(--Brown-800);
+    font-weight:400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.instructions{
+    border-bottom: 1px solid var(--Stone-150);
+}
+.instructions ol{
+    margin-left: 10px;
+}
+.instructions li{
+    margin: 10px;
+    font-family: outfit;
+    font-weight:400;
+    color: var(--Stone-600);
+}
+#last1{
+    margin-bottom: 20px;
+    color: var(--Stone-600);
+}
+.nutritions h2{
+     font-family: young;
+    color: var(--Brown-800);
+    font-weight:400;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.nutritions .pp{
+    font-family: outfit;
+    font-weight:400;
+    color: var(--Stone-600);
+    margin-bottom: 20px;
+}
+article p{
+    display: flex;
+    font-family: outfit;
+    font-weight:400;
+    color: var(--Stone-600);
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--Stone-150);
+}
+article p span{
+    display: flex;
+    flex-direction: column;
+    color: var(--Brown-800);
+    font-weight: 600;
+    min-width: 300px;
+    align-items: end;
+    
+}
+article p span {
+  position: relative;
+  left: 20px; 
+}
+#final{
+    border-bottom: none;
+}
+@media(max-width 375px){
+    .container{
+        min-width: initial;
+        width: 90%;
+    }
+}
