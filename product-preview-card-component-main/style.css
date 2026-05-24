@@ -1,0 +1,128 @@
+@font-face {
+  src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+  font-family: fraunces;
+}
+
+@font-face {
+  src: url(Montserrat-VariableFont_wght.ttf);
+  font-family: Montserrat;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Green-500: hsl(158, 36%, 37%);
+  --Green-700: hsl(158, 42%, 18%);
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--Cream);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  border-radius: 15px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 25px;
+  padding: 38px;
+  width: 300px;
+  height: 450px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: center;
+}
+.details h1 {
+  font-family: fraunces;
+  font-weight: 700;
+}
+.details p {
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--Grey);
+}
+.perfume {
+  letter-spacing: 5px;
+}
+.discount {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.discount h1 {
+  color: var(--Green-500);
+}
+.discount p {
+  text-decoration: line-through;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border: px solid rgb(0, 0, 0);
+  display: flex;
+  border: none;
+  background-color: var(--Green-500);
+  color: white;
+  font-family: montserrat;
+  font-weight: 700;
+  padding: 20px 50px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.button img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.picture {
+  display: flex;
+  background-image: url(images/image-product-desktop.jpg);
+  width: 300px;
+  height: 450px;
+  background-size: contain;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+button:hover {
+  background-color: var(--Green-700);
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 80%;
+    max-width: 95%;
+  }
+  .picture {
+    background-image: url(images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .picture {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+  }
+  .details {
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+  }
+}
